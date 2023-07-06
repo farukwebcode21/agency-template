@@ -413,3 +413,105 @@ transition: 0.5s;
     width: 100%;
     max-width: 700px;
 }
+
+/* contat page */
+#contact .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
+}
+#contact img{
+    justify-self: right;
+    align-self: center;
+    width: 100%;
+}
+.contact-method{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+#contact p{
+    margin: 0.5em 0;
+}
+.contact-method span{
+    font-size: 3em;
+}
+ /* Footer */
+ footer{
+    background: var(--secondary);
+    color: #a7a7a7;
+    padding: 1.5em;
+ }
+ footer p{
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ /* Resoonsive Design */
+ @media screen and (min-width:1200px) {
+    .hero{
+        width: 1150px;
+    }
+    
+ }
+ @media screen and (min-width:1000px){
+    h1{
+        font-size: 3em;
+    }
+    #about{
+        padding: 0 2em;
+    }
+    #about .container >div{
+        padding: 4em 0;
+    }
+    
+ }
+ @media screen and (max-width:1000px) {
+    .brand-mobile, 
+    .menu-btn{
+        display: block;
+    }
+    .brand{
+        display: none;
+    }
+    .navbar{
+        background-color: var(--primary);
+    }
+    .navbar a{
+        color: var(--text);
+    }
+    .menu{
+        position:absolute;
+        top: -20em;
+        left: 0;
+        background: var(--secondary);
+        width: 100%;
+        transition: 0.5s ease-in-out;
+    }
+    .menu ul{
+        padding: 2em;
+        flex-direction: column;
+        gap: 2em;
+        height: 20em;
+        overflow-y: scroll;
+    }
+    .active::before{
+        background-color: var(--accent);
+    }
+    /* Dynamic class for javascript */
+    .menu-open{
+        top: 4.2em;
+    }
+    #about .container{
+        grid-template-columns: 1fr;
+    }
+    #about .container>div:nth-child(2){
+        align-items: flex-start;
+    }
+    #about h1{
+        margin-bottom: 1.5em;
+    }
+    
+    
+ }
