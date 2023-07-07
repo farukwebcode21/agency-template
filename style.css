@@ -500,6 +500,7 @@ transition: 0.5s;
         background-color: var(--accent);
     }
     /* Dynamic class for javascript */
+
     .menu-open{
         top: 4.2em;
     }
@@ -514,4 +515,73 @@ transition: 0.5s;
     }
     
     
+ }
+
+ @media screen and (max-width:900px) {
+    #blog .posts{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .post4{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .post4 .date{
+        right: 0.5em;
+        left: initial;
+    }
+    
+ }
+ @media screen and (max-width:800px) {
+    #services .items,
+    #our-team .team,
+    #pricing .tables{
+        grid-template-columns: 1fr;
+    }
+    #portfolio,
+    #contact .container{
+        display: block;
+    }
+    #portfolio h1{
+        margin: 1em 0;
+    }
+    #contact h1{
+        margin-bottom: 1.5em;
+    }
+    #contact img{
+        margin-top: 2em;
+    }
+    
+ }
+ @media screen and (max-width:600px){
+    #services .container,
+    #blog .container,
+    #our-team .container,
+    #pricing .container{
+        display: block;
+    }
+    #services h1,
+    #blog h1,
+    #our-team h1,
+    #pricing h1{
+        margin-bottom: 1.5em;
+    }
+ }
+ @media screen and (max-width:500px){
+    .post1, .post2, .post3{
+        grid-template-columns: 1fr;
+    }
+    .blog-post-img{
+        height: 10em;
+    }
+ }
+ @media screen and (max-width:400px){
+    html{
+        font-size: 14px;
+    }
+ }
+ @media screen and (max-width:400px) and (max-width:1000px){
+    .navbar .menu ul{
+        height: 70vh;
+    }
  }
