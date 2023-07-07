@@ -504,6 +504,7 @@ transition: 0.5s;
     .menu-open{
         top: 4.2em;
     }
+    
     #about .container{
         grid-template-columns: 1fr;
     }
